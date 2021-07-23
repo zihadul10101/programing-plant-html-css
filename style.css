@@ -8,32 +8,8 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
-.sidebar {
-    position: fixed;
-    right: -10px;
-    width: 250px;
-    height: 100%;
-    background: #e26363;
-   transition: all .5s ease;
-}
-.sidebar ul a {  
-margin-top: 60px;
-justify-self: center; 
-display: block;
-height: 100%;
-width: 100%;
-line-height: 65px;
-font-size: 20px;
-color: white;
-padding-left: 40px;
-box-sizing: border-box;
-border-top: 1px solid rgb(255, 255,255, .1);
-border-bottom: 1px solid black;
-transition: .4s;
-}
-ul li:hover a {
-    padding-left: 50px;
-}
+
+
 .banner-area {
 background: url(./image/header-bg.png) no-repeat;
 width: 100%;
@@ -44,6 +20,7 @@ height: 100%;
 .header-text h1 {
 display: grid;
  grid-template-columns: 1fr;
+ justify-content: center;
 text-align: center;
 font-size: 80px;
 color: white;
@@ -56,23 +33,51 @@ opacity: .6;
 .logo  {
     display: grid;
    justify-content: center;
-
+   color: white;
     font-size: 50px;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     border:2px white;
-    background-color: white;
+   
+  
 }
+
 .search-icon {
     font-size: 20px;
     display: grid;
     justify-content: center;
     padding-top: 20px;
-
+    color: white;
+    }
+    ul li:hover a {
+        padding-left: 50px;
+    }  
+.sidebar ul a {  
+    margin-top: 60px;
+    justify-self: center; 
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255,255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
     }
 
+    .sidebar {
+        position: fixed;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background: #8d8d8d;
+       transition: all .5s ease;
+    }
     #check {
         display: none;
     }
@@ -84,33 +89,34 @@ opacity: .6;
     }
 
 label #btn {
-    left: 40px;
+    right: 80px;
     top: 25px;
     font-size: 35px;
-    color: red;
+    color: white;
     transition: all .5s;
 }
 label #cancel{
     z-index: 11111;
-    left: -195px;
+    right: -195px;
     top: 17px;
     font-size: 35px;
     padding: 4px 9px;
     transition: all .5s ease;
+    color: white;
 }
 
 #check:checked ~ .sidebar{
-    left: 0;
+    right: 0;
 }
 #check:checked ~ label #btn {
-    left: 250px;
+    right: 250px;
     opacity: 0;
     pointer-events: none;
 }
 
 #check:checked ~ label #cancel{
-    left: 195px;
-
+    right: 350px;
+    
 }
 
 /* post section */
@@ -127,6 +133,7 @@ label #cancel{
     grid-gap: 0px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    box-shadow: 5px white;
 }
 .half-post img {
     width: 500px;
@@ -208,6 +215,41 @@ input {
 }
 
 /* travel-gear section */
+.slider{
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.travel-card input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all .15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #fff;
+}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
 .travel-gear {
   
     margin-top: 20px;

@@ -11,7 +11,7 @@
 
   <!-- font awesome link -->
   <link rel="stylesheet" href="all.min.css">
-
+  <link rel="stylesheet" href="all.css">
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -27,20 +27,20 @@
 
       <div class="container">
         <div class="search-icon">
-
           <i class="fas fa-search"></i>
         </div>
         <div class="logo">
           <p>Jevelin</p>
         </div>
+    
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
 
+        </label>
         <div class="sidebar">
-          <input type="checkbox" id="check">
-          <label for="chack">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-
-          </label>
+         
           <ul>
             <li> <a href="#">Home</a> </li>
             <li> <a href="#">Pepole</a> </li>
@@ -49,6 +49,7 @@
 
           </ul>
         </div>
+     
       </div>
 
 
@@ -148,7 +149,7 @@
           <span class="date">by shufflehound November 23, 2016</span>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live…</p>
         </div>
-        
+
         <div class="blog-img">
 
           <img src="./image/blog-post3.png" style="width: 350px; height: 200px;" alt="">
@@ -171,7 +172,7 @@
           <span class="date">by shufflehound November 23, 2016</span>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live…</p>
         </div>
-        
+
 
       </div>
       <div class="small-blog">
@@ -222,41 +223,55 @@
         All about stationary
         & travel gear
       </div>
-      <div class="travel-gear">
+      <div class="slider">
+        <div class="travel-gear">
 
-        <div class="travel-card">
-          <div class="travel-img">
-            <img src="./image/blog-post2.png" style="width: 400px;" alt="">
+
+          <div class="travel-card">
+            <input type="radio" name="slider" id="img1" checked>
+            <input type="radio" name="slider" id="img2">
+            <input type="radio" name="slider" id="img3">
+            <div class="travel-img">
+              <img src="./image/blog-post2.png" style="width: 400px;" alt="img1">
+            </div>
+            <div class="travel-details" style="width: 400px;">
+              <h5>PEOPLE, TRAVEL</h5>
+              <h2>A quick midday swim for inspiration</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl
+                sit
+                amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
+            </div>
           </div>
-          <div class="travel-details" style="width: 400px;">
-            <h5>PEOPLE, TRAVEL</h5>
-            <h2>A quick midday swim for inspiration</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl sit
-              amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
+          <div class="travel-card">
+            <div class="travel-img">
+              <img src="./image/blog-post3.png" style="width: 400px;" alt="img2">
+            </div>
+            <div class="travel-details" style="width: 400px;">
+              <h5>PEOPLE, TRAVEL</h5>
+              <h2>A quick midday swim for inspiration</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl
+                sit
+                amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
+            </div>
+          </div>
+          <div class="travel-card">
+            <div class="travel-img">
+              <img src="./image/blog-post4.png" style="width: 400px;" alt="img3">
+            </div>
+            <div class="travel-details" style="width: 400px;">
+              <h5>PEOPLE, TRAVEL</h5>
+              <h2>A quick midday swim for inspiration</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl
+                sit
+                amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
+            </div>
           </div>
         </div>
-        <div class="travel-card">
-          <div class="travel-img">
-            <img src="./image/blog-post3.png" style="width: 400px;" alt="">
-          </div>
-          <div class="travel-details" style="width: 400px;">
-            <h5>PEOPLE, TRAVEL</h5>
-            <h2>A quick midday swim for inspiration</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl sit
-              amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
-          </div>
-        </div>
-        <div class="travel-card">
-          <div class="travel-img">
-            <img src="./image/blog-post4.png" style="width: 400px;" alt="">
-          </div>
-          <div class="travel-details" style="width: 400px;">
-            <h5>PEOPLE, TRAVEL</h5>
-            <h2>A quick midday swim for inspiration</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in eros scelerisque, scelerisque nisl sit
-              amet, molestie erat. In a elementum ex. Curabitur id tincidunt justo</p>
-          </div>
-        </div>
+      </div>
+      <div class="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+        <label for="img3"></label>
       </div>
     </div>
     <!-- product stored section start -->
@@ -361,7 +376,7 @@
           <p style="width: 300px;">Pellentesque placerat tincidunt urna, vitae feugiat magna vestibulum non. Mauris ut
             sagittis est. Pellentesque a felis est. Duis in risus metus. Cras felis ante, sodales eget pretium eu,
             hendrerit at metus. Maecenas aliquam dictum sapien id ornare.</p>
-            <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>
         </div>
         <div class="recent-post">
           <h4>Recent posts</h4>
