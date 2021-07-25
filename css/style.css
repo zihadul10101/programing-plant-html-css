@@ -55,7 +55,7 @@
     color: white;
     }
 .banner-area {
-    background: url(./image/header-bg.png) no-repeat;
+    background: url(../image/header-bg.png) no-repeat;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
