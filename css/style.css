@@ -203,13 +203,56 @@ input {
 }
 
 /* blogs section */
-.blogs {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 120px;
-    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 120px;
+        
+    }
 }
-.big-blog{
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 120px;
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 120px;
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 120px;
+        
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 120px;
+        
+    }
+}
+.big-container{
     width: 900px;
     padding-top: 50px;
    display: grid;
@@ -217,19 +260,24 @@ input {
 
    
 }
-.small-blog {
+.small-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 300px;
-
+    padding-top: 50px;
 }
 .blog-detail{
     display: grid;
     justify-self: center;
+    padding: 20px;
 }
 .blog-img {
+    padding: 20px;
     display: grid;
     justify-self: center;
+}
+.big-blog h1{
+padding-left: 60px;
 }
 
 /* travel-gear section */
@@ -290,6 +338,11 @@ input {
     font-size: 50px;
     color:white;
 }
+
+
+
+
+
 /* travel-gear section end */
 .stored-product {
  display: grid;
