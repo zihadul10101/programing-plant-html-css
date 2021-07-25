@@ -280,7 +280,7 @@ input {
 .travel-section {
     height: 800px;
     width: 100%;
-    background: url(./image/header-bg.png) no-repeat;
+    background: url(../image/header-bg.png) no-repeat;
 }
 .travel-details {
     background-color: white;
@@ -362,13 +362,15 @@ input {
       padding: 10px;
   }
   .link span {
+ 
     background: #010916;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 3px;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     height: 26px;
+    text-align: center;
 }
 .link a{
     text-decoration: none;
